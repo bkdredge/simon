@@ -4,53 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
-    <link rel="icon" href="favicon.ico" />
+
+    <script src="about.js"></script>
     <link rel="stylesheet" href="main.css" />
+
+    <link rel="stylesheet" href="about.css" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
   </head>
-  <body>
-    <header>
-      <h1>Simon<sup>&reg;</sup></h1>
-
-      <!-- Navigation elements -->
-      <nav>
-        <!-- Menu is a semantic alternative to <ul> that represents an interaction -->
-        <menu class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link"href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link"href="play.html">Play</a></li>
-          <li class="nav-item"><a class="nav-link"href="scores.html">Scores</a></li>
-          <li class="nav-item"><a class="nav-link"href="about.html">About</a></li>
+  <body class="bg-dark text-light">
+    <header class="container-fluid">
+      <nav class="navbar fixed-top navbar-dark">
+        <a class="navbar-brand" href="#">Simon<sup>&reg;</sup></a>
+        <menu class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="play.html">Play</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="scores.html">Scores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">About</a>
+          </li>
         </menu>
       </nav>
-
-      <!-- Since we don't have the ability to style we use old style HTML to give some visual formatting -->
-      <hr />
     </header>
 
-    <main>
-      <p>
-        Simon is a repetitive memory game where you follow the demonstrated
-        color sequence until you make a mistake. The longer the sequence you
-        repeat, the greater your score.
-      </p>
+    <main class="container-fluid bg-secondary text-center">
+      <div>
+        <div id="picture" class="picture-box"></div>
 
-      <p>
-        The name Simon is a registered trademark owned by Milton-Bradley. Our
-        use of the name and the game is for non-profit educational use only. No
-        part of this code or program should be used outside of that definition.
-      </p>
+        <p>
+          Simon is a repetitive memory game where you follow the demonstrated
+          color sequence until you make a mistake. The longer the sequence you
+          repeat, the greater your score.
+        </p>
+
+        <p>
+          The name Simon is a registered trademark of Milton-Bradley. Our use of
+          the name and the game is for non-profit educational use only. No part
+          of this code or program should be used outside of that definition.
+        </p>
+
+        <div id="quote" class="quote-box bg-light text-dark"></div>
+      </div>
     </main>
 
-    <footer>
-      <hr />
-      <span class="text-reset">Author Name(s)</span>
-      <br />
-      <a href="https://github.com/bkdredge/simon">GitHub</a>
+    <footer class="bg-dark text-dark text-muted">
+      <div class="container-fluid">
+        <span class="text-reset">Author Name(s)</span>
+        <a
+          class="text-reset"
+          href="https://github.com/bkdredge/simon"
+          >Source</a
+        >
+      </div>
     </footer>
   </body>
 </html>
